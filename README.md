@@ -37,3 +37,5 @@ to remove a resource from tf state:
 ```
 tf state rm prod - resource_name
 ```
+
+### **Attention:** After deploy the current tfstate will be commited automatically to this repo
