@@ -104,12 +104,14 @@ jobs:
         $COMMAND
 
     - name: setup git config
+      if: always()
       run: |
         # setup the username and email. I tend to use 'GitHub Actions Bot' with no email by default
         git config user.name "furlanrb"
         git config user.email "furlanrb@gmail.com"
 
     - name: commit
+      if: always()
       run: |
         # Stage the file, commit and push
         git add .
